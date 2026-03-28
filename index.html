@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narayan Das | Futuristic Portfolio</title>
+    <meta name="description" content="Portfolio of Narayan Das, B.Tech Student at IIT Kharagpur, Tech Innovator, and AI Builder.">
+    
+    <!-- Google Fonts: Orbitron & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Unicons) -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <!-- Default CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Preloader -->
+    <div id="loader">
+        <div class="loader-content">
+            <h1 class="loader-text" data-text="SYSTEM INITIALIZING...">SYSTEM INITIALIZING...</h1>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Space/Galaxy Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="#hero" class="nav-logo">ND<span class="neon-dot">.</span></a>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-item">00. Home</a></li>
+            <li><a href="#about" class="nav-item">01. About</a></li>
+            <li><a href="#skills" class="nav-item">02. Arsenal</a></li>
+            <li><a href="#projects" class="nav-item">03. Projects</a></li>
+            <li><a href="#achievements" class="nav-item">04. Milestones</a></li>
+            <li><a href="#contact" class="nav-item">05. Transmit</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="uil uil-bars"></i>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- HERO SECTION -->
+        <section id="hero" class="section hero-section">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <p class="hero-pretitle">Hello, Universe. I am</p>
+                    <h1 class="hero-title glitch" data-text="Narayan Das">Narayan Das</h1>
+                    <h3 class="hero-subtitle">B.Tech Student <span class="divider">|</span> Tech Innovator <span class="divider">|</span> AI Builder</h3>
+                    <p class="hero-description">
+                        Exploring the infinite possibilities of technology, from AI to full-stack innovation at IIT Kharagpur. I build scalable digital experiences and intelligent systems for the future.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary"><span>View Projects</span> <i class="uil uil-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary glass-btn"><span>Contact Me</span> <i class="uil uil-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper">
+                    <!-- Floating Orbit Rings -->
+                    <div class="orbits">
+                        <div class="orbit-ring orbit-1"></div>
+                        <div class="orbit-ring orbit-2"></div>
+                        <div class="orbit-ring orbit-3"></div>
+                        <div class="orbit-satellite" id="sat-1"></div>
+                        <div class="orbit-satellite" id="sat-2"></div>
+                    </div>
+                    <!-- Profile Image -->
+                    <div class="profile-container floating-element">
+                        <div class="hologram-effect"></div>
+                        <!-- You can drop your profile picture here using assets/images/profile.jpg -->
+                        <img src="assets/images/profile.jpg" alt="Narayan Das" id="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Narayan+Das&background=000&color=00f0ff&size=400&font-size=0.33&length=2'">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span class="scroll-text">SCROLL</span>
+                <i class="uil uil-mouse-alt-2"></i>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section about-section reveal">
+            <div class="section-header">
+                <h2 class="section-title">01. <span class="neon-text">Origin</span></h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="about-container">
+                <!-- Bio Card -->
+                <div class="glass-card about-card tilt transform-3d">
+                    <div class="card-inner">
+                        <h3 class="card-title"><i class="uil uil-user"></i> Transmission Log: Present</h3>
+                        <p class="about-bio">
+                            I am a passionate technology enthusiast, AI builder, and researcher continually pushing the boundaries of what is possible. By day, I am a B.Tech student at <span class="highlight">IIT Kharagpur</span>. By night, I craft intelligent systems and digital experiences that solve real-world problems.
+                        </p>
+                        <p class="about-bio">
+                            My mission is to leverage my analytical mindset and relentless curiosity to build impactful products that propel society into the future. From conceptualizing algorithms to deploying full-stack web architectures, my approach is rooted in clean design and robust performance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Education Timeline -->
+                <div class="glass-card education-card tilt transform-3d delay-1">
+                    <div class="card-inner">
+                        <h3 class="card-title"><i class="uil uil-graduation-cap"></i> Educational Timeline</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>B.Tech</h4>
+                                    <p class="institute">Indian Institute of Technology, Kharagpur</p>
+                                    <p class="year">Current Phase</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Higher Secondary</h4>
+                                    <p class="institute">Science and Mathematics</p>
+                                    <p class="year">Completed Phase</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section skills-section reveal">
+            <div class="section-header">
+                <h2 class="section-title">02. <span class="neon-text">Arsenal</span></h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="skills-universe" id="physics-space">
+                <!-- Floating Skill Elements via JS -->
+                <div class="skill-sphere float-1"><i class="uil uil-html5"></i> <span>HTML5</span></div>
+                <div class="skill-sphere float-2"><i class="uil uil-css3-simple"></i> <span>CSS3</span></div>
+                <div class="skill-sphere float-3"><i class="uil uil-java-script"></i> <span>JavaScript</span></div>
+                <div class="skill-sphere float-4"><i class="uil uil-react"></i> <span>React</span></div>
+                <div class="skill-sphere float-5"><i class="uil uil-robot"></i> <span>AI Tools</span></div>
+                <div class="skill-sphere float-6"><i class="uil uil-arrow"></i> <span>Python</span></div>
+                <div class="skill-sphere float-7"><i class="uil uil-database"></i> <span>Supabase</span></div>
+                <div class="skill-sphere float-8"><i class="uil uil-transaction"></i> <span>Payments</span></div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section projects-section reveal">
+            <div class="section-header">
+                <h2 class="section-title">03. <span class="neon-text">Constellations</span></h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="glass-card project-card tilt">
+                    <div class="project-img-wrapper">
+                        <div class="img-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Quick Vegies">
+                    </div>
+                    <div class="project-info">
+                        <h3>Quick Vegies E-commerce</h3>
+                        <p>A modern, responsive e-commerce web platform integrating a dynamic UPI QR code payment system for seamless checkout flows and admin verification.</p>
+                        <div class="tech-stack">
+                            <span>MERN Stack</span>
+                            <span>UPI Payments</span>
+                            <span>React</span>
+                        </div>
+                        <div class=" http://10.147.129.205:8080">
+                            <a href="#" class="btn btn-outline"><i class="uil uil-github"></i> Source</a>
+                            <a href="#" class="btn btn-primary"><i class="uil uil-external-link-alt"></i> Live View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card project-card tilt delay-1">
+                    <div class="project-img-wrapper">
+                        <div class="img-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Physics Calculator">
+                    </div>
+                    <div class="project-info">
+                        <h3>Interactive Physics Calculator</h3>
+                        <p>A single-page application utilizing Matter.js to create an anti-gravity physics simulation mixed with a fully functional computational interface.</p>
+                        <div class="tech-stack">
+                            <span>HTML/JS</span>
+                            <span>Matter.js</span>
+                            <span>CSS Physics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline"><i class="uil uil-github"></i> Source</a>
+                            <a href="#" class="btn btn-primary"><i class="uil uil-external-link-alt"></i> Live View</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="glass-card project-card tilt delay-2">
+                    <div class="project-img-wrapper">
+                        <div class="img-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="AI Agent Builder">
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Agent Sandbox</h3>
+                        <p>An experimental sandbox environment for generating and testing AI models utilizing advanced prompt engineering patterns and data analytics.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>LLMs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline"><i class="uil uil-github"></i> Source</a>
+                            <a href="#" class="btn btn-primary"><i class="uil uil-external-link-alt"></i> Live View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS SECTION -->
+        <section id="achievements" class="section achievements-section reveal">
+            <div class="section-header">
+                <h2 class="section-title">04. <span class="neon-text">Milestones</span></h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="achievements-container">
+                <div class="glass-card achievement-card tilt">
+                    <div class="achievement-icon">
+                        <i class="uil uil-trophy"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Innovation Hackathon Winner</h3>
+                        <p>Secured top ranking by building an AI-powered predictive model to solve sustainable energy distribution within a 48-hour sprint.</p>
+                    </div>
+                </div>
+                
+                <div class="glass-card achievement-card tilt delay-1">
+                    <div class="achievement-icon">
+                        <i class="uil uil-atom"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Research & Development</h3>
+                        <p>Conducted independent research in optimizing algorithmic efficiency for neural network rendering on low-power devices.</p>
+                    </div>
+                </div>
+                
+                <div class="glass-card achievement-card tilt delay-2">
+                    <div class="achievement-icon">
+                        <i class="uil uil-rocket"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Open Source Contributor</h3>
+                        <p>Actively contributing to various Web3 and AI toolkits on GitHub to democratize access to advanced technology frameworks.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Future Goals Orbit Visualization -->
+            <div class="future-goals-viz">
+                <h3 class="orbit-title">Trajectory & Vision</h3>
+                <div class="solar-system">
+                    <div class="sun core-goal">AI Innovation</div>
+                    <div class="planet-orbit po-1"><div class="planet planet-1"><span>A.GI</span></div></div>
+                    <div class="planet-orbit po-2"><div class="planet planet-2"><span>Startups</span></div></div>
+                    <div class="planet-orbit po-3"><div class="planet planet-3"><span>Research</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact-section reveal">
+            <div class="section-header">
+                <h2 class="section-title">05. <span class="neon-text">Transmit</span></h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info glass-card tilt">
+                    <h3>Initiate Comms Protocol</h3>
+                    <p>My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:narayan@example.com" class="contact-method">
+                            <i class="uil uil-envelope-alt"></i>
+                            <span>narayan@example.com</span>
+                        </a>
+                        <a href="#" class="contact-method">
+                            <i class="uil uil-map-marker"></i>
+                            <span>IIT Kharagpur, India</span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-orbits">
+                        <a href="#" class="social-icon" style="--i:1;"><i class="uil uil-github"></i></a>
+                        <a href="#" class="social-icon" style="--i:2;"><i class="uil uil-linkedin"></i></a>
+                        <a href="#" class="social-icon" style="--i:3;"><i class="uil uil-twitter"></i></a>
+                        <a href="#" class="social-icon" style="--i:4;"><i class="uil uil-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form glass-card floating-element delay-1">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder="Identification (Name)">
+                        <label for="name">Identification</label>
+                        <div class="form-line"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder="Return Frequency (Email)">
+                        <label for="email">Return Frequency</label>
+                        <div class="form-line"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required placeholder="Data Payload (Message)"></textarea>
+                        <label for="message">Data Payload</label>
+                        <div class="form-line"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span>Send Transmission</span> 
+                        <i class="uil uil-message"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <a href="#hero" class="footer-logo">ND<span class="neon-text">.</span></a>
+            <p>Designed & Built by Narayan Das</p>
+            <p class="copyright">&copy; 202x <span class="neon-text">All Systems Operational.</span></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- GSAP for advanced animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Vanilla Tilt for 3D card effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <!-- Custom Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
